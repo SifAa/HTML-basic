@@ -1,7 +1,17 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+	<style>
+	/* Form styles */
+		form {
+			width: 40vw;
+			margin: 20px auto;
+			border: 1px solid black;
+			padding: 20px;
+		}
+		
+	</style>
 <title>Contact</title>
 </head>
 
@@ -11,5 +21,30 @@
 </header>
 <!-- Navigation -->
 <nav> <a href="../index.html">Home</a> <a href="hello-world.html">Hello world!</a> <a href="the-animal-table.html">The animal table</a> <a href="#">Contact</a> <a href="//www.cphbusiness.dk/" target="_blank">My school</a> </nav>
+<!-- webform -->
+<form action="mailto:cph-sa300@cphbusiness.dk" method="post" enctype="text/plain">
+  <p>
+    <label>Your Name:</label>
+  </p>
+  <p>
+    <input type="text" name="name" placeholder="Type your name.." autofocus required>
+  </p>
+  <p>
+    <label>Your Email:</label>
+  </p>
+  <p>
+    <input type="email" name="email" placeholder="Type a valid mail adress.." required>
+  </p>
+  <p>
+    <label>Your Message:</label>
+  </p>
+  <p>
+    <textarea name="comment" placeholder="Your message..."></textarea>
+  </p>
+  <p>I love this!
+    <input type="radio" name="love" >
+  </p>
+  <input type="submit" value="Submit Form">
+</form>
 </body>
 </html>
